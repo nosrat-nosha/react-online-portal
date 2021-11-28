@@ -194,14 +194,19 @@ const MainSection = () => {
 												</span>
 											</Col>
 											<Col className="col-2">
-												<div
-													className="dropdown1 fas fa-ellipsis-h ms-4 text-center "
-													style={{ float: "right" }}
-												>
-													<i className=""></i>
-													{/* <button className="dropbtn">
+												<div className="dropdown1 ">
+													{/* <Button className="">
+														
+													</Button> */}
+													<div
+														className="dropbtn fas fa-ellipsis-h ms-4 text-center "
+														style={{ float: "right" }}
+													>
+														<i className=""></i>
+														{/* <button className="dropbtn">
 														
 													</button> */}
+													</div>
 													<div className="dropdown-content">
 														<a href="#">Edit</a>
 														<a href="#">Report</a>

@@ -66,9 +66,9 @@
 
 /* dropdown  */
 .dropbtn {
-	color: white;
-
 	border: none;
+
+	cursor: pointer;
 }
 
 .dropdown1 {
@@ -114,7 +114,7 @@
 }
 
 .dropdown1:hover .dropbtn {
-	background-color: #bfbfc0;
+	/* background-color: #bfbfc0; */
 }
 
 /* input  */
