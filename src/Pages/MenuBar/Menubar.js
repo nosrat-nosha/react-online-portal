@@ -33,7 +33,7 @@ const Menubar = () => {
 							<Form className="d-flex">
 								<div className="search-input">
 									<div className="input-icons">
-										<i className="fas fa-search icon"></i>
+										<i className="fas fa-search icon-menu"></i>
 										<input
 											placeholder="search for your favorite groups in ATG"
 											className="input-field form-control rounded-pill"

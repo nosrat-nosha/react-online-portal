@@ -195,7 +195,7 @@ const MainSection = () => {
 											</Col>
 											<Col className="col-2">
 												<div
-													className="dropdown fas fa-ellipsis-h ms-4 text-center "
+													className="dropdown1 fas fa-ellipsis-h ms-4 text-center "
 													style={{ float: "right" }}
 												>
 													<i className=""></i>
