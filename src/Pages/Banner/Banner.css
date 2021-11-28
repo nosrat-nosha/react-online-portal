@@ -1,0 +1,22 @@
+.banner {
+	background-image: url(../../images/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 440px;
+}
+.main-text {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 46.8px;
+	margin-top: 286px;
+	color: #fff;
+	margin-left: 200px;
+}
+.sub-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23.4px;
+	color: #fff;
+	margin-left: 138px;
+}

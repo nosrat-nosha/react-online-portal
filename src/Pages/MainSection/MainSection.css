@@ -1,0 +1,156 @@
+.btn-post {
+	width: 133px;
+	height: 36px;
+	background: #edeef0;
+	border-radius: 4px;
+}
+.btn-group {
+	/* width: 125px; */
+	height: 36px;
+	color: #fff;
+	background: #2f6ce5;
+	border-radius: 4px;
+}
+.join-group {
+	margin-bottom: 10px;
+}
+
+/* ARTICLE */
+.card {
+	width: 692px;
+	height: 472px;
+	/* margin-left: 100px; */
+}
+.orinary-card {
+	width: 692px;
+	height: 272px;
+}
+.card-img {
+	width: 692px;
+	height: 220px;
+}
+.article {
+	font-size: 18px;
+}
+.card-title {
+	font-size: 23px;
+	color: #000000;
+}
+.card-subTitle {
+	size: 19px;
+	line-height: 25.49px;
+	font-weight: 600;
+	color: #5c5c5c;
+}
+.cardUser-img {
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+	float: left;
+	margin-right: 10px;
+}
+.userName {
+	font-size: 18px;
+	color: #000000;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.share i {
+	width: 42px;
+	height: 36px;
+	padding: 10px;
+	background-color: #edeef0;
+	margin-left: 40px;
+}
+
+/* dropdown  */
+.dropbtn {
+	color: white;
+
+	border: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+
+	width: 42px;
+	height: 36px;
+	padding: 10px;
+	background-color: #f1f1f1;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 110px;
+	height: 90px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #bfbfc0;
+}
+
+/* input  */
+.location-input {
+	width: 243px;
+	text-align: center;
+	/* margin-left: 400px; */
+}
+.input-icons i {
+	position: absolute;
+}
+
+.input-icons {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.icon {
+	margin-left: -132px;
+	padding: 10px;
+	margin-top: 5px;
+}
+.icon2 {
+	margin-top: 18px;
+
+	margin-left: 200px;
+}
+
+.input-field {
+	width: 360px;
+
+	padding: 10px;
+	text-align: center;
+}
+.flex {
+	float: left;
+}
+.error-icon {
+	color: #bfbfc0;
+}
+.error-text {
+	font-size: 12px;
+	line-height: 16px;
+	width: 220px;
+	margin-left: 14px;
+}
