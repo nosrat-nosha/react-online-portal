@@ -24,6 +24,7 @@
 .orinary-card {
 	width: 692px;
 	height: 272px;
+	margin-bottom: 98px;
 }
 .card-img {
 	width: 692px;
@@ -61,9 +62,20 @@
 	height: 36px;
 	padding: 10px;
 	background-color: #edeef0;
-	margin-left: 40px;
+	margin-left: 20px;
 }
-
+.button-meetUp {
+	color: #e56135;
+	size: 13px;
+	font-weight: 600;
+	border-radius: 10px;
+}
+.button-job {
+	color: #02b875;
+	size: 13px;
+	font-weight: 600;
+	border-radius: 10px;
+}
 /* dropdown  */
 .dropbtn {
 	border: none;
@@ -160,4 +172,96 @@
 	line-height: 16px;
 	width: 220px;
 	margin-left: 14px;
+}
+
+.desktopNav-hidden {
+	display: block;
+}
+.mobileNav-hidden {
+	display: none;
+}
+.share-button {
+	display: none;
+}
+/* Media query  */
+@media only screen and (width: 360px) {
+	/* Navbar */
+	.desktopNav-hidden {
+		display: none;
+	}
+	.mobileNav-hidden {
+		display: block;
+		size: 14px;
+		font-weight: 700;
+	}
+	.mobileNav-button {
+		font-weight: 500;
+		size: 13px;
+	}
+	/* card  */
+	.card {
+		width: 358px;
+		height: 335px;
+		margin: 0 auto;
+		margin-left: -10px;
+	}
+	.orinary-card {
+		width: 358px;
+		height: 335px;
+		margin-bottom: 20px;
+	}
+	.meetup-card {
+		height: 380px;
+	}
+	.education-card {
+		height: 380px;
+	}
+	.card-img {
+		width: 358px;
+		height: 120px;
+	}
+	.article {
+		font-size: 14px;
+	}
+	.card-title {
+		font-size: 16px;
+		color: #000000;
+		font-weight: 600;
+	}
+	.card-subTitle {
+		size: 14px;
+		line-height: 18.2px;
+		font-weight: 400;
+		color: #5c5c5c;
+	}
+	.cardUser-img {
+		width: 48px;
+		height: 48px;
+		border-radius: 24px;
+		float: left;
+		margin-right: 10px;
+	}
+	.userName {
+		font-size: 14px;
+		color: #000000;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+
+	.Kviews {
+		display: none;
+	}
+	.share {
+		display: none;
+	}
+	.share-button {
+		display: block;
+	}
+	.date-name {
+		size: 12px;
+		font-weight: 500;
+	}
+	.second-column {
+		display: none;
+	}
 }

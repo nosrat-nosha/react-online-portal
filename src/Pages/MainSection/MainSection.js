@@ -19,13 +19,24 @@ import user3 from "../../images/user3.jpg";
 const MainSection = () => {
 	return (
 		<div>
-			<Navbar bg="light" expand="lg">
+			{/* navbar for desktop view  */}
+			<Navbar
+				className="
+				desktopNav-hidden
+			"
+				bg="light"
+				expand="lg"
+			>
 				<Container>
-					<Navbar.Brand className="border-bottom" href="#">
+					<Navbar.Brand className="border-bottom " href="#">
 						All Posts(32)
 					</Navbar.Brand>
-					<Navbar.Toggle aria-controls="navbarScroll" />
-					<Navbar.Collapse id="navbarScroll">
+
+					<Navbar.Toggle
+						aria-controls="navbarScroll 
+					"
+					/>
+					<Navbar.Collapse id="navbarScroll nav-collaps ">
 						<Nav
 							className="me-auto my-2 my-lg-0"
 							style={{ maxHeight: "100px" }}
@@ -40,20 +51,7 @@ const MainSection = () => {
 							<Button className="btn btn-post me-3">
 								write a post <i className="fas fa-caret-down"></i>
 							</Button>
-							{/* <NavDropdown
-								className="btn bg-secondary"
-								title="write a post"
-								id="navbarScrollingDropdown"
-							>
-								<NavDropdown.Item href="#action3">Education</NavDropdown.Item>
-								<NavDropdown.Item href="#action4">
-									Another action
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-								<NavDropdown.Item href="#action5">
-									Something else here
-								</NavDropdown.Item>
-							</NavDropdown> */}
+
 							<Button className="btn btn-group  ">
 								<i className="fas fa-users m-1"></i>{" "}
 								<span className="join-group ">join group</span>
@@ -62,6 +60,20 @@ const MainSection = () => {
 					</Navbar.Collapse>
 				</Container>
 				<hr />
+			</Navbar>
+			{/* navbar for mobile view */}
+			<Navbar className="mobileNav-hidden">
+				<Container>
+					<Navbar.Brand href="#home">Post (368)</Navbar.Brand>
+					<Navbar.Toggle />
+					<Navbar.Collapse className="justify-content-end">
+						<Navbar.Text>
+							<Button className="btn btn-post mobileNav-button me-3">
+								Filter : All <i className="fas fa-caret-down"></i>
+							</Button>
+						</Navbar.Text>
+					</Navbar.Collapse>
+				</Container>
 			</Navbar>
 			{/* col-lg-6 col-sm-12 flex */}
 			{/* post  */}
@@ -89,7 +101,10 @@ const MainSection = () => {
 												</span>
 											</Col>
 											<Col className="col-2">
-												<i className="fas fa-ellipsis-h ms-5"></i>
+												<i
+													className="fas fa-ellipsis-h 
+												 ellipssis"
+												></i>
 											</Col>
 										</Row>
 									</Card.Text>
@@ -109,13 +124,27 @@ const MainSection = () => {
 														alt=""
 													/>
 													<span className="userName ">Sarthak Kamar</span>
+													<p>1.4K views</p>
 												</div>
 											</Col>
 											<Col className="col-4">
-												<i className="far fa-eye"></i> <span>1.4K views</span>
-												<span className="share">
-													<i className="fas fa-share-alt"></i>
+												<i className="far fa-eye Kviews"></i>{" "}
+												<span
+													className="
+												Kviews"
+												>
+													1.4K views
 												</span>
+												<span className="share">
+													<i className="fas fa-share-alt"> </i>
+												</span>
+												<Button
+													className="btn w-100  btn-post share-button
+													
+												"
+												>
+													<i className="fas fa-share-alt p-1"></i>share
+												</Button>
 											</Col>
 										</Row>
 									</Card.Text>
@@ -123,7 +152,7 @@ const MainSection = () => {
 							</Card>
 							<br />
 							{/* EDUCATION card-2  */}
-							<Card border="primary" className="card">
+							<Card border="primary" className="card education-card">
 								<Card.Img
 									variant="top"
 									src={img1}
@@ -142,7 +171,10 @@ const MainSection = () => {
 												</span>
 											</Col>
 											<Col className="col-2">
-												<i className="fas fa-ellipsis-h ms-5"></i>
+												<i
+													className="fas fa-ellipsis-h 
+												"
+												></i>
 											</Col>
 										</Row>
 									</Card.Text>
@@ -161,14 +193,28 @@ const MainSection = () => {
 														src={user2}
 														alt=""
 													/>
-													<span className="userName ">Sarah West</span>
+													<span className="userName ">Sarthak Kamar</span>
+													<p>1.4K views</p>
 												</div>
 											</Col>
 											<Col className="col-4">
-												<i className="far fa-eye"></i> <span>1.4K views</span>
-												<span className="share">
-													<i className="fas fa-share-alt"></i>
+												<i className="far fa-eye Kviews"></i>{" "}
+												<span
+													className="
+												Kviews"
+												>
+													1.4K views
 												</span>
+												<span className="share">
+													<i className="fas fa-share-alt"> </i>
+												</span>
+												<Button
+													className="btn w-100  btn-post share-button
+													
+												"
+												>
+													<i className="fas fa-share-alt p-1"></i>share
+												</Button>
 											</Col>
 										</Row>
 									</Card.Text>
@@ -176,7 +222,7 @@ const MainSection = () => {
 							</Card>
 							<br />
 							{/* MEET UP card-3  */}
-							<Card border="primary" className="card">
+							<Card border="primary" className="card meetup-card">
 								<Card.Img
 									variant="top"
 									src={img1}
@@ -199,14 +245,10 @@ const MainSection = () => {
 														
 													</Button> */}
 													<div
-														className="dropbtn fas fa-ellipsis-h ms-4 text-center "
+														className="dropbtn fas fa-ellipsis-h 
+														 text-center "
 														style={{ float: "right" }}
-													>
-														<i className=""></i>
-														{/* <button className="dropbtn">
-														
-													</button> */}
-													</div>
+													></div>
 													<div className="dropdown-content">
 														<a href="#">Edit</a>
 														<a href="#">Report</a>
@@ -218,11 +260,11 @@ const MainSection = () => {
 									</Card.Text>
 									<Card.Text>
 										<Row>
-											<Col className="col-4">
+											<Col className="col-lg-4 col-sm-6 date-name">
 												<i class="fas fa-calendar-day"></i>
 												<span> Fri, 12 Oct, 2018</span>
 											</Col>
-											<Col className="col-4">
+											<Col className="col-lg-4 col-sm-6">
 												<i class="fas fa-map-marker-alt"></i>
 												<span> Ahmedabad,India</span>
 											</Col>
@@ -233,10 +275,10 @@ const MainSection = () => {
 											<Col className="col-12">
 												<div class="d-grid gap-2">
 													<button
-														className="btn btn-outline-secondary"
+														className="btn btn-outline-secondary button-meetUp"
 														type="button"
 													>
-														Button
+														Visit Website
 													</button>
 												</div>
 											</Col>
@@ -251,15 +293,28 @@ const MainSection = () => {
 														src={user3}
 														alt=""
 													/>
-													<span className="userName ">Sarah West</span>
+													<span className="userName ">Sarthak Kamar</span>
+													<p>1.4K views</p>
 												</div>
 											</Col>
-
 											<Col className="col-4">
-												<i className="far fa-eye"></i> <span>1.4K views</span>
-												<span className="share">
-													<i className="fas fa-share-alt"></i>
+												<i className="far fa-eye Kviews"></i>{" "}
+												<span
+													className="
+												Kviews"
+												>
+													1.4K views
 												</span>
+												<span className="share">
+													<i className="fas fa-share-alt"> </i>
+												</span>
+												<Button
+													className="btn w-100  btn-post share-button
+													
+												"
+												>
+													<i className="fas fa-share-alt p-1"></i>share
+												</Button>
 											</Col>
 										</Row>
 									</Card.Text>
@@ -278,17 +333,20 @@ const MainSection = () => {
 												<span className="card-title">Software Developer</span>
 											</Col>
 											<Col className="col-2">
-												<i className="fas fa-ellipsis-h ms-5"></i>
+												<i
+													className="fas fa-ellipsis-h 
+												"
+												></i>
 											</Col>
 										</Row>
 									</Card.Text>
 									<Card.Text>
 										<Row>
-											<Col className="col-4">
-												<i class="fas fa-calendar-day"></i>
-												<span> Fri, 12 Oct, 2018</span>
+											<Col className="col-lg-4 col-sm-6">
+												<i class="fas fa-briefcase"></i>
+												<span> Innovaccer Analytics Private Ltd.</span>
 											</Col>
-											<Col className="col-4">
+											<Col className="col-lg-4 col-sm-6">
 												<i class="fas fa-map-marker-alt"></i>
 												<span> Ahmedabad,India</span>
 											</Col>
@@ -299,10 +357,10 @@ const MainSection = () => {
 											<Col className="col-12">
 												<div class="d-grid gap-2">
 													<button
-														className="btn btn-outline-secondary"
-														type="button"
+														className="btn btn-outline-secondary button-job"
+														type="button "
 													>
-														Button
+														Apply on TimesJobs
 													</button>
 												</div>
 											</Col>
@@ -314,17 +372,31 @@ const MainSection = () => {
 												<div className="">
 													<img
 														className="img-fluid cardUser-img"
-														src={user2}
+														src={user3}
 														alt=""
 													/>
-													<span className="userName ">Sarah West</span>
+													<span className="userName ">Sarthak Kamar</span>
+													<p>1.4K views</p>
 												</div>
 											</Col>
 											<Col className="col-4">
-												<i className="far fa-eye"></i> <span>1.4K views</span>
-												<span className="share">
-													<i className="fas fa-share-alt"></i>
+												<i className="far fa-eye Kviews"></i>{" "}
+												<span
+													className="
+												Kviews"
+												>
+													1.4K views
 												</span>
+												<span className="share">
+													<i className="fas fa-share-alt"> </i>
+												</span>
+												<Button
+													className="btn w-100  btn-post share-button
+													
+												"
+												>
+													<i className="fas fa-share-alt p-1"></i>share
+												</Button>
 											</Col>
 										</Row>
 									</Card.Text>
@@ -332,8 +404,8 @@ const MainSection = () => {
 							</Card>
 						</>
 					</Col>
-
-					<Col className="">
+					{/* Second column */}
+					<Col className="second-column">
 						<Form className="">
 							<div className="location-input">
 								<div className="input-icons">
