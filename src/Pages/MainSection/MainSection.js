@@ -82,7 +82,7 @@ const MainSection = () => {
 					<Col className="">
 						<>
 							{/*ARTICLE card 1 */}
-							<Card border="primary" className="card">
+							<Card className="card">
 								<Card.Img
 									variant="top"
 									src={img1}
@@ -124,7 +124,7 @@ const MainSection = () => {
 														alt=""
 													/>
 													<span className="userName ">Sarthak Kamar</span>
-													<p>1.4K views</p>
+													<p className="Dviews">1.4K views</p>
 												</div>
 											</Col>
 											<Col className="col-4">
@@ -152,7 +152,7 @@ const MainSection = () => {
 							</Card>
 							<br />
 							{/* EDUCATION card-2  */}
-							<Card border="primary" className="card education-card">
+							<Card className="card education-card">
 								<Card.Img
 									variant="top"
 									src={img1}
@@ -193,8 +193,8 @@ const MainSection = () => {
 														src={user2}
 														alt=""
 													/>
-													<span className="userName ">Sarthak Kamar</span>
-													<p>1.4K views</p>
+													<span className="userName ">Sarah West</span>
+													<p className="Dviews">1.4K views</p>
 												</div>
 											</Col>
 											<Col className="col-4">
@@ -222,7 +222,7 @@ const MainSection = () => {
 							</Card>
 							<br />
 							{/* MEET UP card-3  */}
-							<Card border="primary" className="card meetup-card">
+							<Card className="card meetup-card">
 								<Card.Img
 									variant="top"
 									src={img1}
@@ -293,8 +293,8 @@ const MainSection = () => {
 														src={user3}
 														alt=""
 													/>
-													<span className="userName ">Sarthak Kamar</span>
-													<p>1.4K views</p>
+													<span className="userName ">Ronal Jones</span>
+													<p className="Dviews">1.4K views</p>
 												</div>
 											</Col>
 											<Col className="col-4">
@@ -322,7 +322,7 @@ const MainSection = () => {
 							</Card>
 							<br />
 							{/* JOB card-4  */}
-							<Card border="primary" className="orinary-card">
+							<Card className="orinary-card">
 								<Card.Body>
 									<Card.Title>
 										<i className="far fa-edit article"></i> Job
@@ -375,8 +375,8 @@ const MainSection = () => {
 														src={user3}
 														alt=""
 													/>
-													<span className="userName ">Sarthak Kamar</span>
-													<p>1.4K views</p>
+													<span className="userName ">Ronal Jones</span>
+													<p className="Dviews">1.4K views</p>
 												</div>
 											</Col>
 											<Col className="col-4">
